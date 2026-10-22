@@ -4,7 +4,7 @@ contact_links:
     url: https://claude.export.anhbui.dev/contacts
     about: Contact support@anhbui.dev privately for technical or account-specific help.
   - name: Billing and private customer assistance
-    url: mailto:support@anhbui.dev
+    url: https://claude.export.anhbui.dev/contacts
     about: Keep purchase records, license tokens and payment information out of public issues.
   - name: Private security reporting
     url: https://github.com/AnhBuiDeveloper/ClaudeExport/security/policy
