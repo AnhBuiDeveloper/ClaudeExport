@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Technical or account support
+    url: https://claude.export.anhbui.dev/contacts
+    about: Contact support@anhbui.dev privately for technical or account-specific help.
+  - name: Billing and private customer assistance
+    url: mailto:support@anhbui.dev
+    about: Keep purchase records, license tokens and payment information out of public issues.
+  - name: Private security reporting
+    url: https://github.com/AnhBuiDeveloper/ClaudeExport/security/policy
+    about: Read the policy and email support@anhbui.dev privately. Do not disclose vulnerabilities publicly.
+  - name: Official product website
+    url: https://claude.export.anhbui.dev/
+    about: Find installation links, product guides, pricing and the Privacy Policy.

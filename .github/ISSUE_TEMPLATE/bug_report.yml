@@ -1,0 +1,104 @@
+name: Bug report
+description: Report a reproducible Claude Export problem using safe sample content.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This report is public. Use invented sample text, not your real conversations.
+        Do not include conversation content, purchase records, emails, credentials,
+        verification codes, license/integration tokens, private URLs or payment details.
+        Account and billing: support@anhbui.dev. Security: email support privately;
+        do not disclose exploitable vulnerabilities here. Read SUPPORT.md and SECURITY.md.
+  - type: input
+    id: summary
+    attributes:
+      label: Problem summary
+      description: Describe the failure in one sentence without private data.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Give numbered steps with invented, non-sensitive sample content.
+      placeholder: |
+        1. Open a test conversation containing sample text.
+        2. Choose ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include only a sanitized visible error or support reference, not raw logs.
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Google Chrome
+        - Microsoft Edge
+    validations:
+      required: true
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser version
+      placeholder: Exact version from your browser's About page
+    validations:
+      required: true
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version
+      description: Find it in chrome://extensions or edge://extensions.
+    validations:
+      required: true
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system
+      placeholder: OS name and version; omit device names and usernames
+    validations:
+      required: true
+  - type: dropdown
+    id: feature
+    attributes:
+      label: Export format or feature
+      options:
+        - PDF
+        - Word / DOCX
+        - Markdown
+        - TXT
+        - Clipboard
+        - HTML
+        - JSON
+        - ZIP / bulk export
+        - Backup / local archive (if available in installed version)
+        - Popup / settings
+        - Other non-sensitive product behavior
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Optional sanitized screenshot
+      description: Crop and inspect it first. Hide conversations, names, tabs, URLs and tokens. Do not attach exports, backups or raw logs.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I removed private content, personal information, credentials, tokens, purchase records and payment details from this report and all attachments.
+          required: true

@@ -1,0 +1,51 @@
+name: Feature request
+description: Suggest a product improvement and explain the workflow it would help.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This request is public. Use invented examples; exclude conversations, personal
+        information, purchase records, credentials, tokens and payment details.
+        Account/billing and security matters belong at support@anhbui.dev privately.
+  - type: textarea
+    id: need
+    attributes:
+      label: Problem or need
+      description: What are you trying to accomplish, and what is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Proposed improvement
+      description: Describe the user-facing behavior you would like.
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Example workflow
+      description: Show a short example using invented, non-sensitive content.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Intended benefit
+      description: Who would benefit and how would this help them?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Optional additional context
+      description: Include alternatives considered. Inspect any attachments for private information.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: This request and its attachments contain no private conversations, personal information, credentials, tokens, purchase records or payment details.
+          required: true

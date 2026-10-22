@@ -1,0 +1,40 @@
+name: Documentation issue
+description: Report incorrect, unclear or missing public product documentation.
+title: "[Docs]: "
+labels: [documentation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Link only to public documents, not private management
+        or conversation URLs. Exclude personal information, purchase records,
+        conversation content, credentials, tokens and payment details.
+        For private assistance or security reports, email support@anhbui.dev.
+  - type: input
+    id: document
+    attributes:
+      label: Affected document
+      description: Public document title, repository path or public URL.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect or missing?
+      description: If relevant, state the browser and extension version without private data.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+      description: Suggest clearer wording or the information you expected to find.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I removed private content, personal information, credentials, tokens, purchase records and payment details from this issue and all attachments.
+          required: true
